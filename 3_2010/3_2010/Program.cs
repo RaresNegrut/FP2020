@@ -13,9 +13,20 @@ namespace _3_2010
             }
             return s;
         }
-        Ordonare3V2(int a, int b,int c)
+        static void Ordonare3V2(int a, int b,int c)
         {
-
+            int minim, maxim;
+            minim = a;
+            if (b < minim)
+                minim = b;
+            if (c < minim)
+                minim = c;
+            maxim = a;
+            if (b > maxim)
+                maxim = b;
+            if (c > maxim)
+                maxim = c;
+            int median = a + b + c - minim - maxim;  
         }
         static void Main(string[] args)
         {
